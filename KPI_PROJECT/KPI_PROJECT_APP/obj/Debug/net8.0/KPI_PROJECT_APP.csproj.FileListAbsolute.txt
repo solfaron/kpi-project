@@ -1,0 +1,14 @@
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/bin/Debug/net8.0/KPI_PROJECT_APP
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/bin/Debug/net8.0/KPI_PROJECT_APP.deps.json
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/bin/Debug/net8.0/KPI_PROJECT_APP.runtimeconfig.json
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/bin/Debug/net8.0/KPI_PROJECT_APP.dll
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/bin/Debug/net8.0/KPI_PROJECT_APP.pdb
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/obj/Debug/net8.0/KPI_PROJECT_APP.GeneratedMSBuildEditorConfig.editorconfig
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/obj/Debug/net8.0/KPI_PROJECT_APP.AssemblyInfoInputs.cache
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/obj/Debug/net8.0/KPI_PROJECT_APP.AssemblyInfo.cs
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/obj/Debug/net8.0/KPI_PROJECT_APP.csproj.CoreCompileInputs.cache
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/obj/Debug/net8.0/KPI_PROJECT_APP.dll
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/obj/Debug/net8.0/refint/KPI_PROJECT_APP.dll
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/obj/Debug/net8.0/KPI_PROJECT_APP.pdb
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/obj/Debug/net8.0/KPI_PROJECT_APP.genruntimeconfig.cache
+/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/obj/Debug/net8.0/ref/KPI_PROJECT_APP.dll

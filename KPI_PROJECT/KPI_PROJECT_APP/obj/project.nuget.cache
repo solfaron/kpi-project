@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iG15YZrxm2o=",
+  "success": true,
+  "projectFilePath": "/home/igruk/KPI_PROJECT/kpi-project/KPI_PROJECT/KPI_PROJECT_APP/KPI_PROJECT_APP.csproj",
+  "expectedPackageFiles": [
+    "/home/igruk/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}
