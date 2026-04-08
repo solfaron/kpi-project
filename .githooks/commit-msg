@@ -1,0 +1,15 @@
+#!/bin/bash
+
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
+
+REGEX="^PRJ-[0-9]+"
+
+if [[ ! $COMMIT_MSG =~ $REGEX ]]; then
+  echo "--------------------------------------------------------"
+  echo "COMMIT REJECTED: Invalid Format"
+  echo "Your commit message must START with the Trello ID."
+  echo "Example: PRJ-40 Create test database"
+  echo "--------------------------------------------------------"
+  exit 1
+fi

@@ -1,0 +1,40 @@
+name: Trello Automation
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  move-card-to-done:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract Trello ID
+        id: extract
+        run: |
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
+          TRELLO_ID=$(echo "$COMMIT_MSG" | grep -oP 'PRJ-[0-9]+' | head -n 1)
+          echo "Found ID: $TRELLO_ID"
+          echo "TRELLO_ID=$TRELLO_ID" >> $GITHUB_ENV
+
+      - name: Update Trello Board
+        if: env.TRELLO_ID != ''
+        env:
+          TRELLO_KEY: ${{ secrets.TRELLO_API_KEY }}
+          TRELLO_TOKEN: ${{ secrets.TRELLO_API_TOKEN }}
+          DONE_LIST_ID: ${{ secrets.TRELLO_DONE_LIST_ID }}
+        run: |
+          SEARCH_URL="https://api.trello.com/1/search?query=${{ env.TRELLO_ID }}&modelTypes=cards&key=$TRELLO_KEY&token=$TRELLO_TOKEN"
+          SEARCH_RES=$(curl -s "$SEARCH_URL")
+
+          CARD_ID=$(echo $SEARCH_RES | jq -r '.cards[0].id')
+
+          if [ "$CARD_ID" != "null" ]; then
+            echo "Moving card $CARD_ID to the Done list..."
+            curl -s -X PUT "https://api.trello.com/1/cards/$CARD_ID" \
+              -d "idList=$DONE_LIST_ID" \
+              -d "key=$TRELLO_KEY" \
+              -d "token=$TRELLO_TOKEN"
+            echo "Successfully moved!"
+          else
+            echo "Warning: Could not find a Trello card matching ${{ env.TRELLO_ID }}"
+          fi

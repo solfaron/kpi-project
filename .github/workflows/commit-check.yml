@@ -1,0 +1,22 @@
+name: Enforce Commit Standards
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  check-commit-message:
+    name: Check for Trello ID at Start
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Commit Message
+        uses: gsactions/commit-message-checker@v2
+        with:
+          pattern: '^PRJ-[0-9]+'
+          flags: 'gm'
+          error: 'Rejecting push: Your commit message must START with a Trello task ID (e.g., PRJ-1: Added database).'
+          excludeDescription: 'true'
+          excludeTitle: 'true'
+          checkAllCommitMessages: 'true'
