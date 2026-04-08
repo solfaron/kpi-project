@@ -1,0 +1,37 @@
+name: Publish GitHub Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Publish Application
+      run: dotnet publish App/KPI_PROJECT_APP.csproj --configuration Release --output ./publish_output
+
+    - name: Zip the Output
+      run: |
+        cd publish_output
+        zip -r ../Release.zip .
+        cd ..
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: Release.zip
+        generate_release_notes: true
