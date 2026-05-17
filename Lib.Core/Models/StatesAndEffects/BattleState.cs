@@ -5,6 +5,5 @@ public enum BattleState
     Charmed,
     Poisoned,
     Burning,
-    Defensive,
-    Normal
+    Defensive
 }
