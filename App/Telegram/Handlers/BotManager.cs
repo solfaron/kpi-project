@@ -1,19 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using KPI_PROJECT.Models;
+using Lib.Core.BaseClasses;
+using Lib.Core.Enums;
+using Lib.Core.Models.Items;
+using Lib.Core.Models.Items.Common;
+using Lib.Infrastructure.CharacterFactory;
+using Lib.Infrastructure.Database;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.ReplyMarkups;
-using KPI_PROJECT.Services;
-using KPI_PROJECT.Models.Enums;
-using KPI_PROJECT.Models.BaseClasses;
-using KPI_PROJECT.Models.CharacterFactory;
-using KPI_PROJECT.Models.Items;
 
-namespace KPI_PROJECT.Handlers;
+namespace App.Telegram.Handlers;
 
 public class BotManager
 {

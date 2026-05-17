@@ -1,9 +1,9 @@
 using KPI_PROJECT.Models.EnemySkills;
-using KPI_PROJECT.Models.EnemySkills.DefaultSkills;
-using KPI_PROJECT.Models.EnemySkills.IBattleUnit;
-using KPI_PROJECT.Models.EnumStates;
+using Lib.Core.Interfaces;
+using Lib.Core.Models.Skills.DefaultSkills;
+using Lib.Core.Models.StatesAndEffects;
 
-namespace KPI_PROJECT.Models.BaseClasses;
+namespace Lib.Core.BaseClasses;
 
 public abstract class EnemyBase : IBattleUnit
 {

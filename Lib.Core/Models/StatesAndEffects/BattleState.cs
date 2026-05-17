@@ -1,4 +1,4 @@
-namespace KPI_PROJECT.Models.EnumStates;
+namespace Lib.Core.Models.StatesAndEffects;
 
 public enum BattleState
 {

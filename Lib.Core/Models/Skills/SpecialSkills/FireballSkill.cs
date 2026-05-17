@@ -1,4 +1,5 @@
-using KPI_PROJECT.Models.EnumStates;
+using Lib.Core.Interfaces;
+using Lib.Core.Models.StatesAndEffects;
 
 namespace KPI_PROJECT.Models.EnemySkills;
 
@@ -14,7 +15,7 @@ public class FireballSkill : ISkill
         Multiplier = 2;
     }
 
-    public void Execute(IBattleUnit.IBattleUnit caster, IBattleUnit.IBattleUnit target)
+    public void Execute(IBattleUnit caster, IBattleUnit target)
     {
         var existBurning = target.CurrentEffects.Find(e => e.BattleState == BattleState.Burning);
         var existCharm = target.CurrentEffects.Find(e => e.BattleState == BattleState.Charmed);

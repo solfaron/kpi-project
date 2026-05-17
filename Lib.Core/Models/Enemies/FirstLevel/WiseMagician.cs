@@ -1,9 +1,8 @@
-using KPI_PROJECT.Models.BaseClasses;
 using KPI_PROJECT.Models.EnemySkills;
-using KPI_PROJECT.Models.EnemySkills.IBattleUnit;
-using KPI_PROJECT.Models.EnumStates;
+using Lib.Core.BaseClasses;
+using Lib.Core.Interfaces;
 
-namespace KPI_PROJECT.Models.Enemies.FirstLevel;
+namespace Lib.Core.Models.Enemies.FirstLevel;
 
 public class WiseMagician : EnemyBase, IBattleUnit
 {

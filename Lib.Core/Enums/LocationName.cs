@@ -1,4 +1,4 @@
-namespace KPI_PROJECT.Models.Enums;
+namespace Lib.Core.Enums;
 
 public enum LocationName
 {

@@ -1,4 +1,4 @@
-namespace KPI_PROJECT.Models;
+namespace Lib.Core.BaseClasses;
 
 public class User
 {

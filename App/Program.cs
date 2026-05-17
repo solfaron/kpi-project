@@ -1,5 +1,5 @@
-﻿using KPI_PROJECT.Handlers;
-using KPI_PROJECT.Services;
+﻿using App.Telegram.Handlers;
+using Lib.Infrastructure.Database;
 using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types.Enums;

@@ -1,9 +1,9 @@
+using Lib.Core.BaseClasses;
+using Lib.Core.Enums;
+using Lib.Core.Models.Map;
 using Microsoft.Data.Sqlite;
-using KPI_PROJECT.Models.Map;
-using KPI_PROJECT.Models.Enums;
-using KPI_PROJECT.Models;
 
-namespace KPI_PROJECT.Services;
+namespace Lib.Infrastructure.Database;
 
 public class DatabaseManager
 {

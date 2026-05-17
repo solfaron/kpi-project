@@ -1,4 +1,6 @@
-namespace KPI_PROJECT.Models.Items;
+using Lib.Core.BaseClasses;
+
+namespace Lib.Core.Models.Items.Common;
 
 public class MagicRobe : BaseItem
 {

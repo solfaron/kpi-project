@@ -1,4 +1,6 @@
-namespace KPI_PROJECT.Models.CharacterFactory;
+using Lib.Core.BaseClasses;
+
+namespace Lib.Infrastructure.CharacterFactory;
 
 public static class CharacterFactory
 {

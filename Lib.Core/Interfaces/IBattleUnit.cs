@@ -1,6 +1,6 @@
-using KPI_PROJECT.Models.EnumStates;
+using Lib.Core.Models.StatesAndEffects;
 
-namespace KPI_PROJECT.Models.EnemySkills.IBattleUnit;
+namespace Lib.Core.Interfaces;
 
 public interface IBattleUnit
 {

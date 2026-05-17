@@ -1,6 +1,6 @@
-using KPI_PROJECT.Models.Enums;
+using Lib.Core.Enums;
 
-namespace KPI_PROJECT.Models.Map;
+namespace Lib.Core.Models.Map;
 
 public class Room
 {

@@ -1,4 +1,4 @@
-namespace KPI_PROJECT.Services;
+namespace Lib.Core.Services;
 
 public class BattleRuler
 {

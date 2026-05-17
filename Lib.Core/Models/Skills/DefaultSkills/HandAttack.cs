@@ -1,13 +1,14 @@
-using KPI_PROJECT.Models.EnumStates;
+using Lib.Core.Interfaces;
+using Lib.Core.Models.StatesAndEffects;
 
-namespace KPI_PROJECT.Models.EnemySkills.DefaultSkills;
+namespace Lib.Core.Models.Skills.DefaultSkills;
 
 public class HandAttack : ISkill
 {
     public string Name => "Hand Attack";
     
 
-    public void Execute(IBattleUnit.IBattleUnit caster, IBattleUnit.IBattleUnit target)
+    public void Execute(IBattleUnit caster, IBattleUnit target)
     {
         var existDefensive = target.CurrentEffects.Find(e => e.BattleState == BattleState.Defensive);
         int totalDmg = caster.HandDmg - target.PhisDefense;

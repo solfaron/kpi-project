@@ -1,9 +1,9 @@
-using KPI_PROJECT.Models.EnemySkills.IBattleUnit;
-using KPI_PROJECT.Models.Enums;
-using KPI_PROJECT.Models.EnumStates;
-using KPI_PROJECT.Models.Items;
+using Lib.Core.Enums;
+using Lib.Core.Interfaces;
+using Lib.Core.Models.Items;
+using Lib.Core.Models.StatesAndEffects;
 
-namespace KPI_PROJECT.Models;
+namespace Lib.Core.BaseClasses;
 
 public class Character : IBattleUnit
 {
