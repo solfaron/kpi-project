@@ -1,0 +1,31 @@
+using Lib.Core.Enums;
+using Lib.Core.Interfaces;
+using Lib.Core.Models.Items;
+using Lib.Core.Models.StatesAndEffects;
+
+namespace Lib.Core.BaseClasses;
+
+public class Character : IBattleUnit
+{
+    public int Id { get; set; } 
+    
+    public long TelegramId { get; set; } 
+    
+    public string Class { get; set; }
+    public int Level { get; set; } = 1;
+    public LocationName LocationName { get; set; } 
+    
+    public int MaxHp { get; set; }
+    public int Hp { get; set; }
+    
+    public int BasePhisDefense { get; set; }
+    public int PhisDefense { get; set; }
+    
+    public List<ActiveEffect> CurrentEffects { get; set; } = new();
+    public List<BaseItem> Items { get; set; } = new();
+    
+    public int HandDmg { get; set; }
+    public int MagicPower { get; set; }
+
+    public int CurrentRoomId { get; set; }
+}

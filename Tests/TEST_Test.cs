@@ -1,4 +1,4 @@
-namespace KPI_PROJECT_TESTS;
+namespace Tests;
 
 public class Tests
 {
