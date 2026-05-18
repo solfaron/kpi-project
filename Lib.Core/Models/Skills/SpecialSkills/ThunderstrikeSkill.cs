@@ -17,7 +17,7 @@ public class ThunderStrikeSkill : ISkill
 
     public void Execute(IBattleUnit caster, IBattleUnit target)
     {
-        var existCharm = target.CurrentEffects.Find(e => e.BattleState == BattleState.Charmed); ; 
+        var existCharm = target.CurrentEffects.Find(e => e.BattleStateEnum == BattleStateEnum.Charmed); ; 
         if (existCharm != null)
         {
             TotalDmg *= Multiplier;

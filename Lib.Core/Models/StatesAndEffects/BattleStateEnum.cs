@@ -1,10 +1,10 @@
 namespace Lib.Core.Models.StatesAndEffects;
 
-public enum BattleState
+public enum BattleStateEnum
 {
+    Doomed,
     Charmed,
     Poisoned,
     Burning,
-    Defensive,
-    Normal
+    Defensive
 }
