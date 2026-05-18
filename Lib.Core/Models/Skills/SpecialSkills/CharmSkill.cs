@@ -11,7 +11,7 @@ public class CharmSkill : ISkill
     
     public void Execute(IBattleUnit caster, IBattleUnit target)
     {
-        var existCharm = target.CurrentEffects.Find(e => e.BattleState == BattleState.Charmed);
+        var existCharm = target.CurrentEffects.Find(e => e.BattleStateEnum == BattleStateEnum.Charmed);
         if (existCharm != null)
         {
             existCharm.TurnsLeft = 3;
@@ -19,7 +19,7 @@ public class CharmSkill : ISkill
 
         else
         {
-            target.CurrentEffects.Add(new ActiveEffect(BattleState.Charmed, 3));
+            target.CurrentEffects.Add(new ActiveEffect(BattleStateEnum.Charmed, 3));
             target.PhisDefense = Math.Max(0, target.PhisDefense - 3);
         }
     }
